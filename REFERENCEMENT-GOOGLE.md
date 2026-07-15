@@ -300,7 +300,7 @@ instantané, mais un nom peu concurrentiel joue en votre faveur.
 - [x] Google Search Console : « Demander une indexation »
 - [x] Google Search Console : sitemap envoyé
 - [ ] Sitemap au statut « Réussite » *(attendre / re-soumettre si besoin)*
-- [ ] Google Analytics (GA4) installé
+- [x] Google Analytics (GA4) installé (ID `G-N16PGG40C1`)
 - [ ] Bing Webmaster Tools (bonus)
 - [ ] Lien du site dans les bios LinkedIn / Instagram / Facebook
 - [x] Vrais liens sociaux dans le pied de page (LinkedIn, Instagram, Facebook) + `sameAs`
