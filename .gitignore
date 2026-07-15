@@ -1,0 +1,21 @@
+# Outillage local (skills Claude, config agent) — non nécessaire au site
+.claude/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs & dépendances
+node_modules/
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.bak

@@ -1,485 +1,413 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
-    <title>Zitafannie</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <title>Zita Fannie — Relations publiques & communication numérique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Zita Fannie Andrianarivony — chargée de communication et relations publiques à Fianarantsoa, Madagascar. Communication numérique, création de contenu, gestion de projet et médias.">
+    <meta name="author" content="Zita Fannie Andrianarivony">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Zita Fannie — Relations publiques & communication numérique">
+    <meta property="og:description" content="Chargée de communication et relations publiques à Fianarantsoa, Madagascar.">
+    <meta property="og:image" content="img/hero.jpg">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="img/favicon.ico">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts : Bricolage Grotesque (titrage) · Inter (corps) · Space Mono (labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/refonte.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">zita</span>fannie</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Accueil</a>
-                <a href="#about" class="nav-item nav-link">A Propos</a>
-                <a href="#qualification" class="nav-item nav-link">Qualitè</a>
-                <a href="#skill" class="nav-item nav-link">Compétence </a>
-                <a href="#service" class="nav-item nav-link">Service</a>
-                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                <a href="#blog" class="nav-item nav-link">Intérêts</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
+<body>
+    <a href="#accueil" class="skip">Aller au contenu</a>
+
+    <!-- ===================== Masthead / Nav ===================== -->
+    <header class="masthead">
+        <div class="wrap bar">
+            <a href="#accueil" class="logo"><b>zita</b>fannie</a>
+            <nav class="nav-links" aria-label="Navigation principale">
+                <a href="#accueil" class="active">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#parcours">Parcours</a>
+                <a href="#competences">Compétences</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-    </nav>
-    <!-- Navbar End -->
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+            <a href="#accueil"><span>Accueil</span><span class="idx">00</span></a>
+            <a href="#apropos"><span>À propos</span><span class="idx">01</span></a>
+            <a href="#parcours"><span>Parcours</span><span class="idx">02</span></a>
+            <a href="#competences"><span>Compétences</span><span class="idx">03</span></a>
+            <a href="#services"><span>Services</span><span class="idx">04</span></a>
+            <a href="#portfolio"><span>Portfolio</span><span class="idx">05</span></a>
+            <a href="#contact"><span>Contact</span><span class="idx">07</span></a>
+        </nav>
+    </header>
 
+    <main id="main">
 
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>        
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
-
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/IMG_7493.jpeg" alt="">
-                </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">Bonjour,Je suis</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Zita Fannie</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Diplomée de Licence en Relations Publiques et Communication Organisationnelle</div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;"> JE SUIS?</h1>
-                <h1 class="position-absolute text-uppercase text-primary">QUI JE SUIS?</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/IMG_7481.jpeg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Diplômée en Relations Publiques et Communication Organisationnelle</h3>
-                    <p>Étudiante en Master I spécialisée en communication numérique et management de projet, je suis passionnée par les stratégies digitales, la création de contenu, et la coordination de projets à impact. Mon parcours universitaire et mes expériences au sein de médias et d’ONG m’ont permis de développer une bonne capacité d’adaptation, un esprit d’équipe, et un sens aigu de la communication. Curieuse, créative et rigoureuse, je m'investis dans chaque projet avec enthousiasme.
-
-                    </p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Nom: <span class="text-secondary">ANDRIANARIVONY Zita Fannie</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Date de naissance: <span class="text-secondary">15 Janvier 2004</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Niveau: <span class="text-secondary">Master 1</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">4 ans</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Téléphone: <span class="text-secondary">+261 34 11 357 68</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary"> fannie.andria15@gmail.com</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Adresse: <span class="text-secondary">Andrainjato, Fianarantsoa, Madagascar</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Linkedin: <span class="text-secondary">Zita Fannie ANDRIANARIVONY</span></h6></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Qualitè</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expérience</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">EDUCATION</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Diplome de Licence</h5>
-                            <p class="mb-2"><strong>EMIT Fianarantsoa</strong> | <small>2024</small></p>
-                            <p> Troisième année en Relations Publiques et Multimédia.  </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <p class="mb-2"><strong>EMIT Fianarantsoa</strong> | <small>2023</small></p>
-                            <p>Deuxième année en Relations Publiques et Multimédia.  </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <p class="mb-2"><strong>EMIT Fianarantsoa</strong> | <small>2022</small></p>
-                            <p>Première année en Relations Publiques et Multimédia.   </div>
-                                <h5 class="font-weight-bold mb-1">Diplome de Baccalauréat</h5>
-                                <p class="mb-2"><strong>Lycée Fo Masin’i Jesoa Ranomafana</strong> | <small>2021</small></p>
-                                <p> Terminal A</div>
-                   </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">EXPERIENCE</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Étudiante en Master I – Communication Numérique et Management de Projet</h5>
-                            <p class="mb-2"><strong>EMIT Fianarantsoa</strong> | <small>2025 - Présent</small></p>
-                            <p>Développement de compétences en gestion de projets, stratégie digitale, rédaction web, communication de crise, et outils numériques</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Chargée de communication (stagiaire)</h5>
-                            <p class="mb-2"><strong>ONG Ny Tanintsika, Fianarantsoa</strong> | <small>2024</small></p>
-                            <p>Rédaction de supports de communication, animation des réseaux sociaux, production de contenus, couverture événementielle.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Animatrice télévisuelle (stagiaire)</h5>
-                            <p class="mb-2"><strong>GTV (Gideona Television)</strong>|<small>2023</small></p>
-                            <p>Présentation d’émissions, animation de plateaux, participation à la production de contenu audiovisuel.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">CERTIFICATION</h5>
-                            <p class="mb-2"><strong>MADVISION Antohanatady</strong>|<small>2021</small></p>
-                            <p>Certificat en Informatique Bureautique</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Qualification End -->
-
-
-    <!-- Competence Start -->
-    <div class="container-fluid py-5" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">COMPETENCES</h1>
-                <h1 class="position-absolute text-uppercase text-primary">COMPETENCES</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">WORD</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">POWER POINT</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">EXCEL</h6>
-                            <h6 class="font-weight-bold">50%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">INDESING</h6>
-                            <h6 class="font-weight-bold">70%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">PHOTOSHOP</h6>
-                            <h6 class="font-weight-bold">50%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">HTML §  CSS</h6>
-                            <h6 class="font-weight-bold">50%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Competence End -->
-
-
-    <!-- Services Start -->
-    <div class="container-fluid pt-5" id="service">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Mes Services</h1>
-            </div>
-            <div class="row pb-3">
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Gestion de projet</h4>
-                    </div>
-                    <p>Planification, coordination d’équipes, suivi et évaluation de projets.</p>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Communication digitale</h4>
-                    </div>
-                    <p>Création et gestion de contenus, réseaux sociaux, stratégie de communication.</p>
-                </div>       
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Relations publiques & médias</h4>
-                    </div>
-                    <p>Expérience en animation télévisuelle et communication institutionnelle. </p>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Communication Organisationnelle</h4>
-                    </div>
-                    <p>Communication interne,communication externe</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services End -->
-
-
-    <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallerie</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Mon Portfolio</h1>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">Tous</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Relations publiques</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Communication</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/Relations publique.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/Relations publique.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+        <!-- ===================== Hero ===================== -->
+        <section class="hero" id="accueil">
+            <div class="wrap">
+                <div class="hero-grid">
+                    <div>
+                        <p class="kicker hero-kicker">Portfolio — Fianarantsoa, Madagascar</p>
+                        <h1>Zita<span class="l2">Fannie</span></h1>
+                        <p class="role">Relations publiques · Communication numérique · Management de projet</p>
+                        <p class="lead">Diplômée en relations publiques et communication organisationnelle, aujourd'hui en Master&nbsp;I de communication numérique. Je conçois des messages qui se voient, s'entendent et rassemblent — du plateau télé aux réseaux sociaux.</p>
+                        <div class="hero-cta">
+                            <a href="#contact" class="btn btn-primary">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" stroke="none"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                                Me contacter
                             </a>
+                            <a href="#parcours" class="btn btn-ghost">Voir le parcours</a>
+                        </div>
+                    </div>
+                    <div class="portrait reveal">
+                        <img src="img/hero.jpg" width="640" height="800" fetchpriority="high"
+                             alt="Portrait de Zita Fannie Andrianarivony">
+                        <span class="tag">En poste dès maintenant</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== Ticker (signature) ===================== -->
+        <div class="ticker" aria-hidden="true">
+            <div class="ticker-track">
+                <span>Relations publiques</span><span>Communication numérique</span><span>Management de projet</span><span>Création de contenu</span><span>Médias &amp; télévision</span><span>Communication de crise</span>
+                <span>Relations publiques</span><span>Communication numérique</span><span>Management de projet</span><span>Création de contenu</span><span>Médias &amp; télévision</span><span>Communication de crise</span>
+            </div>
+        </div>
+
+        <!-- ===================== À propos ===================== -->
+        <section class="section" id="apropos">
+            <div class="wrap">
+                <div class="rubrique reveal">
+                    <span class="no">№ 01</span>
+                    <h2>Qui je suis</h2>
+                    <span class="aside">Communicante, curieuse, rigoureuse</span>
+                </div>
+                <div class="about-grid">
+                    <div class="about-photo reveal">
+                        <img src="img/about.jpg" width="600" height="800" loading="lazy"
+                             alt="Zita Fannie Andrianarivony en situation professionnelle">
+                    </div>
+                    <div class="about-body reveal">
+                        <h3>Diplômée en relations publiques et communication organisationnelle</h3>
+                        <p>Étudiante en Master&nbsp;I spécialisée en communication numérique et management de projet, je suis passionnée par les stratégies digitales, la création de contenu et la coordination de projets à impact. Mon parcours universitaire et mes expériences au sein de médias et d'ONG m'ont permis de développer une bonne capacité d'adaptation, un esprit d'équipe et un sens aigu de la communication. Curieuse, créative et rigoureuse, je m'investis dans chaque projet avec enthousiasme.</p>
+                        <dl class="fiche">
+                            <div><dt>Nom</dt><span class="v">Andrianarivony Zita Fannie</span></div>
+                            <div><dt>Naissance</dt><span class="v">15 janvier 2004</span></div>
+                            <div><dt>Niveau</dt><span class="v">Master&nbsp;1</span></div>
+                            <div><dt>Expérience</dt><span class="v">4 ans</span></div>
+                            <div><dt>Téléphone</dt><span class="v">+261 34 11 357 68</span></div>
+                            <div><dt>Email</dt><span class="v">fannie.andria15@gmail.com</span></div>
+                            <div><dt>Adresse</dt><span class="v">Andrainjato, Fianarantsoa, Madagascar</span></div>
+                            <div><dt>LinkedIn</dt><span class="v">Zita Fannie Andrianarivony</span></div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== Parcours ===================== -->
+        <section class="section alt" id="parcours">
+            <div class="wrap">
+                <div class="rubrique reveal">
+                    <span class="no">№ 02</span>
+                    <h2>Parcours</h2>
+                    <span class="aside">Formation &amp; expérience</span>
+                </div>
+                <div class="two-col">
+                    <div class="reveal">
+                        <h3 class="col-title">Formation</h3>
+                        <div class="timeline">
+                            <div class="tl-item">
+                                <span class="year">2024</span>
+                                <h4>Diplôme de Licence — Relations publiques &amp; Multimédia</h4>
+                                <p class="org">EMIT Fianarantsoa</p>
+                                <p>Troisième année en relations publiques et multimédia.</p>
+                            </div>
+                            <div class="tl-item">
+                                <span class="year">2023</span>
+                                <h4>Deuxième année — Relations publiques &amp; Multimédia</h4>
+                                <p class="org">EMIT Fianarantsoa</p>
+                            </div>
+                            <div class="tl-item">
+                                <span class="year">2022</span>
+                                <h4>Première année — Relations publiques &amp; Multimédia</h4>
+                                <p class="org">EMIT Fianarantsoa</p>
+                            </div>
+                            <div class="tl-item">
+                                <span class="year">2021</span>
+                                <h4>Baccalauréat série A</h4>
+                                <p class="org">Lycée Fo Masin'i Jesoa, Ranomafana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal">
+                        <h3 class="col-title">Expérience</h3>
+                        <div class="timeline">
+                            <div class="tl-item">
+                                <span class="year">2025 — présent</span>
+                                <h4>Master&nbsp;I — Communication numérique &amp; management de projet</h4>
+                                <p class="org">EMIT Fianarantsoa</p>
+                                <p>Gestion de projets, stratégie digitale, rédaction web, communication de crise et outils numériques.</p>
+                            </div>
+                            <div class="tl-item">
+                                <span class="year">2024</span>
+                                <h4>Chargée de communication (stagiaire)</h4>
+                                <p class="org">ONG Ny Tanintsika, Fianarantsoa</p>
+                                <p>Rédaction de supports, animation des réseaux sociaux, production de contenus et couverture événementielle.</p>
+                            </div>
+                            <div class="tl-item">
+                                <span class="year">2023</span>
+                                <h4>Animatrice télévisuelle (stagiaire)</h4>
+                                <p class="org">GTV — Gideona Television</p>
+                                <p>Présentation d'émissions, animation de plateaux et production de contenu audiovisuel.</p>
+                            </div>
+                            <div class="tl-item">
+                                <span class="year">2021</span>
+                                <h4>Certification en informatique bureautique</h4>
+                                <p class="org">MADVISION Antohanatady</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/communication.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/communication.png" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+            </div>
+        </section>
+
+        <!-- ===================== Compétences ===================== -->
+        <section class="section" id="competences">
+            <div class="wrap">
+                <div class="rubrique reveal">
+                    <span class="no">№ 03</span>
+                    <h2>Compétences</h2>
+                    <span class="aside">Outils &amp; savoir-faire</span>
+                </div>
+                <div class="skills-grid reveal">
+                    <div class="skill-group">
+                        <h4>Bureautique</h4>
+                        <div class="meter"><div class="meter-head"><span class="name">Word</span><span class="val">95 %</span></div><div class="meter-bar"><i style="--lvl:95%"></i></div></div>
+                        <div class="meter"><div class="meter-head"><span class="name">PowerPoint</span><span class="val">80 %</span></div><div class="meter-bar"><i style="--lvl:80%"></i></div></div>
+                        <div class="meter"><div class="meter-head"><span class="name">Excel</span><span class="val">50 %</span></div><div class="meter-bar"><i style="--lvl:50%"></i></div></div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>PAO &amp; Design</h4>
+                        <div class="meter"><div class="meter-head"><span class="name">InDesign</span><span class="val">70 %</span></div><div class="meter-bar"><i style="--lvl:70%"></i></div></div>
+                        <div class="meter"><div class="meter-head"><span class="name">Photoshop</span><span class="val">50 %</span></div><div class="meter-bar"><i style="--lvl:50%"></i></div></div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Web</h4>
+                        <div class="meter"><div class="meter-head"><span class="name">HTML &amp; CSS</span><span class="val">50 %</span></div><div class="meter-bar"><i style="--lvl:50%"></i></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== Services ===================== -->
+        <section class="section alt" id="services">
+            <div class="wrap">
+                <div class="rubrique reveal">
+                    <span class="no">№ 04</span>
+                    <h2>Mes services</h2>
+                    <span class="aside">Ce que je peux prendre en charge</span>
+                </div>
+                <div class="services-grid reveal">
+                    <article class="service">
+                        <span class="no">01</span>
+                        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+                        <h4>Gestion de projet</h4>
+                        <p>Planification, coordination d'équipes, suivi et évaluation de projets.</p>
+                    </article>
+                    <article class="service">
+                        <span class="no">02</span>
+                        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+                        <h4>Communication digitale</h4>
+                        <p>Création et gestion de contenus, réseaux sociaux, stratégie de communication.</p>
+                    </article>
+                    <article class="service">
+                        <span class="no">03</span>
+                        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span>
+                        <h4>Relations publiques &amp; médias</h4>
+                        <p>Animation télévisuelle, relation presse et communication institutionnelle.</p>
+                    </article>
+                    <article class="service">
+                        <span class="no">04</span>
+                        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                        <h4>Communication organisationnelle</h4>
+                        <p>Communication interne et externe au service de la cohésion.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== Portfolio ===================== -->
+        <section class="section" id="portfolio">
+            <div class="wrap">
+                <div class="rubrique reveal">
+                    <span class="no">№ 05</span>
+                    <h2>Portfolio</h2>
+                    <span class="aside">Réalisations &amp; visuels</span>
+                </div>
+                <div class="filters reveal" role="group" aria-label="Filtrer le portfolio">
+                    <button class="active" data-filter="all">Tous</button>
+                    <button data-filter="rp">Relations publiques</button>
+                    <button data-filter="com">Communication</button>
+                    <button data-filter="mkt">Marketing</button>
+                </div>
+                <div class="gallery reveal">
+                    <button class="gal-item" data-cat="rp" data-full="img/Relations%20publique.jpg">
+                        <img src="img/Relations%20publique.jpg" loading="lazy" alt="Visuel de relations publiques">
+                        <span class="cap"><span class="t">Relations publiques</span><span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></span>
+                    </button>
+                    <button class="gal-item" data-cat="rp" data-full="img/relations%20publiques.jpg">
+                        <img src="img/relations%20publiques.jpg" loading="lazy" alt="Campagne de relations publiques">
+                        <span class="cap"><span class="t">Relations publiques</span><span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></span>
+                    </button>
+                    <button class="gal-item" data-cat="com" data-full="img/communication.png">
+                        <img src="img/communication.png" loading="lazy" alt="Support de communication digitale">
+                        <span class="cap"><span class="t">Communication</span><span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></span>
+                    </button>
+                    <button class="gal-item" data-cat="com" data-full="img/Gestion%20de%20projet.jpg">
+                        <img src="img/Gestion%20de%20projet.jpg" loading="lazy" alt="Visuel de gestion de projet">
+                        <span class="cap"><span class="t">Gestion de projet</span><span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></span>
+                    </button>
+                    <button class="gal-item" data-cat="mkt" data-full="img/MARKETING.jfif">
+                        <img src="img/MARKETING.jfif" loading="lazy" alt="Visuel marketing">
+                        <span class="cap"><span class="t">Marketing</span><span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== Intérêts ===================== -->
+        <section class="section alt" id="interets">
+            <div class="wrap">
+                <div class="rubrique reveal">
+                    <span class="no">№ 06</span>
+                    <h2>Mes passions</h2>
+                    <span class="aside">En dehors de l'écran</span>
+                </div>
+                <div class="interests reveal">
+                    <figure class="interest">
+                        <img src="img/voyage.jfif" loading="lazy" alt="Voyage">
+                        <figcaption class="label"><span class="s">Découverte</span><span class="t">Voyage</span></figcaption>
+                    </figure>
+                    <figure class="interest">
+                        <img src="img/Basket.jfif" loading="lazy" alt="Basket-ball">
+                        <figcaption class="label"><span class="s">Esprit d'équipe</span><span class="t">Basket-ball</span></figcaption>
+                    </figure>
+                    <figure class="interest">
+                        <img src="img/Natation12.jfif" loading="lazy" alt="Natation">
+                        <figcaption class="label"><span class="s">Endurance</span><span class="t">Natation</span></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== Contact ===================== -->
+        <section class="section" id="contact">
+            <div class="wrap">
+                <div class="rubrique reveal">
+                    <span class="no">№ 07</span>
+                    <h2>Contact</h2>
+                    <span class="aside">Parlons de votre projet</span>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-intro reveal">
+                        <h3>Un message à faire passer&nbsp;?</h3>
+                        <p>Disponible pour des missions en communication, relations publiques et gestion de projet. Écrivez-moi, je réponds vite.</p>
+                        <div class="coords">
+                            <a href="mailto:fannie.andria15@gmail.com">
+                                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></span>
+                                <span><span class="lab">Email</span>fannie.andria15@gmail.com</span>
                             </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/MARKETING.jfif" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/MARKETING.jfif" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            <a href="tel:+261341135768">
+                                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                                <span><span class="lab">Téléphone</span>+261 34 11 357 68</span>
                             </a>
+                            <div class="row">
+                                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                                <span><span class="lab">Localisation</span>Andrainjato, Fianarantsoa, Madagascar</span>
+                            </div>
                         </div>
                     </div>
+                    <form class="form reveal" id="contactForm" novalidate>
+                        <div class="row2">
+                            <div class="field">
+                                <label for="nom">Votre nom</label>
+                                <input type="text" id="nom" name="nom" required autocomplete="name" placeholder="Nom et prénom">
+                            </div>
+                            <div class="field">
+                                <label for="email">Votre email</label>
+                                <input type="email" id="email" name="email" required autocomplete="email" placeholder="vous@exemple.com">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="objet">Objet</label>
+                            <input type="text" id="objet" name="objet" required placeholder="Sujet du message">
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required placeholder="Votre message…"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="sendBtn">
+                            Envoyer le message
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        </button>
+                        <p class="form-note" id="formNote">Le bouton ouvre votre logiciel de messagerie avec le message pré-rempli.</p>
+                    </form>
                 </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== Footer ===================== -->
+    <footer class="foot">
+        <div class="wrap">
+            <div class="foot-top">
+                <div>
+                    <span class="logo"><b>zita</b>fannie</span>
+                    <p class="tagline">Relations publiques &amp; communication numérique — Fianarantsoa, Madagascar.</p>
+                </div>
+                <div class="socials" aria-label="Réseaux sociaux">
+                    <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95s-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="mailto:fannie.andria15@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></a>
+                </div>
+            </div>
+            <div class="foot-bottom">
+                <span>© <span id="year">2025</span> Zita Fannie Andrianarivony</span>
+                <a href="#accueil">Retour en haut ↑</a>
             </div>
         </div>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu de l'image">
+        <button class="lb-close" id="lbClose" aria-label="Fermer">&times;</button>
+        <img src="" alt="" id="lbImg">
     </div>
-    <!-- Testimonial End -->
 
-
-    <!-- Interets Start -->
-    <div class="container-fluid pt-5" id="blog">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Intérêts</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Mes Passions</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/voyage.jfif" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Voyage</h5>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/Basket.jfif">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">02</h4>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Basket-ball</h5>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/Natation12.jfif" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">03</h4>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Natation</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Interet End -->
-
-
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Contact</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form text-center">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="nom" placeholder="Votre Nom"
-                                        required="required" data-validation-required-message="Veuillez entrer votre nom" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Votre E-mail"
-                                        required="required" data-validation-required-message="Veuillez entrer votre e-mail" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="objet" placeholder="Objet"
-                                    required="required" data-validation-required-message="Veuillez entrer votre objet" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Veuillez entrer votre message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Envoyer le message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
-            <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            
-    </div>
-    <!-- Footer End -->
-
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/refonte.js"></script>
 </body>
 
 </html>
