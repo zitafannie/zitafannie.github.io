@@ -1,0 +1,208 @@
+===============================================================================
+  PORTFOLIO ZITA FANNIE — DOCUMENTATION DE LA REFONTE
+  Site : https://zitafannie.github.io   (GitHub Pages, déployé depuis « main »)
+  Dernière mise à jour : 15 juillet 2026
+===============================================================================
+
+-------------------------------------------------------------------------------
+0. RÉSUMÉ EN UNE PHRASE
+-------------------------------------------------------------------------------
+Le portfolio, basé sur un template gratuit générique (FreeFolio / HTML Codex),
+a été entièrement refondu avec une identité éditoriale sur-mesure, un code
+moderne sans dépendances lourdes, une meilleure accessibilité/performance, et
+un référencement Google (SEO) complet.
+
+
+-------------------------------------------------------------------------------
+1. POINT DE DÉPART (AVANT)
+-------------------------------------------------------------------------------
+- Template gratuit « FreeFolio » de HTML Codex, look « déjà vu ».
+- Stack lourd : Bootstrap 4.4.1 + jQuery + 6 librairies (owlcarousel, isotope,
+  typed, waypoints, lightbox, easing).
+- Problèmes constatés :
+  * Métadonnées jamais personnalisées (« Free HTML Templates »), lang="en"
+    alors que le contenu est en français.
+  * HTML cassé dans la section Parcours (balises <p>/<div> non fermées).
+  * Fautes : « INDESING », « HTML § CSS », « Qualitè ».
+  * Images très lourdes (photo d'accueil : 1,5 Mo), attributs alt vides.
+  * Formulaire de contact en PHP → NE FONCTIONNE PAS sur GitHub Pages
+    (GitHub Pages ne fait pas tourner de PHP).
+  * Liens sociaux vides (href="#").
+
+
+-------------------------------------------------------------------------------
+2. MÉTHODE — DEUX « SKILLS » DE DESIGN UTILISÉS
+-------------------------------------------------------------------------------
+La refonte s'appuie sur les deux skills installés dans le dossier .claude/ :
+
+A) frontend-design  → LA DIRECTION CRÉATIVE
+   Objectif : sortir du rendu « template » et créer une identité unique,
+   ancrée dans le monde de Zita (relations publiques, communication, média/TV,
+   Fianarantsoa).
+
+B) ui-ux-pro-max   → LA QUALITÉ & L'IMPLÉMENTATION
+   Objectif : appliquer une checklist priorisée (accessibilité, interaction,
+   performance, typographie, responsive, animation).
+
+Les deux sont complémentaires : l'un décide la direction, l'autre garantit une
+mise en œuvre propre et accessible.
+
+
+-------------------------------------------------------------------------------
+3. IDENTITÉ VISUELLE RETENUE — « LA RÉDACTION »
+-------------------------------------------------------------------------------
+Concept : une identité éditoriale + broadcast (télé/radio), qui reflète le
+métier de communicante.
+
+- Typographies (Google Fonts) :
+  * Titrage  : Bricolage Grotesque  (caractère éditorial, non générique)
+  * Corps    : Inter                (lisible, neutre)
+  * Labels   : Space Mono           (voix « technique / broadcast »)
+
+- Palette :
+  * Papier chaud   #FBF8F3
+  * Encre          #17161B
+  * Bleu électrique#1B34E0  (primaire — crédible, « média »)
+  * Corail         #FF4A1C  (accent « on air »)
+
+- Élément signature : un BANDEAU DÉFILANT type « chyron » de chaîne TV
+  (défile en continu sous l'accueil). C'est le seul effet « fort » ; tout le
+  reste reste sobre et discipliné.
+
+- Structure éditoriale : sections numérotées façon rubriques de magazine
+  (№ 01 À propos, № 02 Parcours, …). La numérotation 01/02/03 des « Intérêts »
+  a été RETIRÉE (ce n'est pas une séquence) mais CONSERVÉE sur le Parcours
+  (vraie chronologie).
+
+
+-------------------------------------------------------------------------------
+4. FICHIERS
+-------------------------------------------------------------------------------
+CRÉÉS :
+  css/refonte.css              Nouveau design system (autonome, sans Bootstrap)
+  js/refonte.js                JavaScript vanilla (aucune dépendance)
+  img/hero.jpg                 Photo d'accueil optimisée (1469 Ko -> 132 Ko)
+  img/about.jpg                Photo « à propos » optimisée (561 Ko -> 119 Ko)
+  img/favicon.ico             Favicon aux couleurs de la marque (généré)
+  robots.txt                   Autorise l'exploration + pointe le sitemap
+  sitemap.xml                  Plan du site pour Google
+  .gitignore                   Ignore .claude/, fichiers OS/IDE, temporaires
+  DOCUMENTATION-REFONTE.txt    Ce document
+
+MODIFIÉ :
+  index.html                   Entièrement réécrit (structure, contenu, SEO)
+
+CONSERVÉS MAIS PLUS UTILISÉS (supprimables après validation) :
+  css/style.css, css/style.min.css, js/main.js, scss/, lib/, mail/
+  img/IMG_7493.jpeg, img/IMG_7481.jpeg  (originaux des photos optimisées)
+
+
+-------------------------------------------------------------------------------
+5. CHANGEMENTS TECHNIQUES
+-------------------------------------------------------------------------------
+- Suppression de Bootstrap, jQuery et des 6 librairies : le site est désormais
+  100 % HTML/CSS/JS « vanilla », plus léger et plus rapide.
+
+- Accessibilité (a11y) :
+  * lang="fr", lien d'évitement (« Aller au contenu »)
+  * focus visible au clavier, attributs aria-*, rôles
+  * textes alternatifs (alt) réels sur les images
+  * hiérarchie de titres correcte, cibles tactiles >= 44 px
+  * respect de « prefers-reduced-motion » (animations coupées si demandé)
+
+- Performance :
+  * Photos compressées (voir §4), lazy-loading des images sous la ligne de
+    flottaison, largeur/hauteur fixées (évite les sauts de mise en page / CLS)
+  * Beaucoup moins de requêtes réseau (plus de CDN Bootstrap/jQuery/etc.)
+
+- Fonctionnalités JS (js/refonte.js) :
+  menu mobile, lien de navigation actif au défilement (scrollspy), apparition
+  au défilement, filtre du portfolio, lightbox (agrandissement d'image),
+  bouton « retour en haut », année du footer automatique, formulaire -> mailto.
+
+
+-------------------------------------------------------------------------------
+6. CONTENU
+-------------------------------------------------------------------------------
+- Fautes corrigées : InDesign, « HTML & CSS », méta personnalisées.
+- HTML cassé de la section Parcours réparé.
+- Formulaire de contact : le PHP (non fonctionnel sur GitHub Pages) a été
+  remplacé par un système « mailto » : au clic, le logiciel de messagerie
+  s'ouvre avec le message pré-rempli vers fannie.andria15@gmail.com.
+  Les coordonnées (email, téléphone, localisation) sont aussi cliquables.
+
+
+-------------------------------------------------------------------------------
+7. RÉFÉRENCEMENT (SEO) — CE QUI A ÉTÉ AJOUTÉ DANS LE CODE
+-------------------------------------------------------------------------------
+- Titre de page incluant le NOM COMPLET (« Zita Fannie Andrianarivony … »).
+- Balises meta : description, keywords (variantes du nom), robots,
+  lien canonical.
+- Open Graph + Twitter Card (bel aperçu quand le lien est partagé).
+- Données structurées JSON-LD (ProfilePage / Person) : Google comprend qu'il
+  s'agit du portfolio d'une personne (nom, métier, ville, compétences).
+- robots.txt + sitemap.xml.
+
+
+-------------------------------------------------------------------------------
+8. RÉFÉRENCEMENT — CE QU'IL RESTE À FAIRE (ACTIONS MANUELLES)
+-------------------------------------------------------------------------------
+Le code ne suffit pas : il faut demander à Google d'indexer le site.
+
+1) Google Search Console : https://search.google.com/search-console
+   - Ajouter une propriété -> « Préfixe d'URL » -> https://zitafannie.github.io/
+   - Vérifier (méthode « Balise HTML » : coller la balise fournie dans le
+     <head>, puis pousser et cliquer « Vérifier »).
+   - Menu « Sitemaps » -> soumettre : sitemap.xml
+   - Menu « Inspection de l'URL » -> coller l'URL -> « Demander une indexation ».
+
+2) Backlinks : mettre le lien https://zitafannie.github.io dans les bios
+   LinkedIn / Instagram / Facebook (accélère l'indexation et le classement).
+
+3) Liens sociaux : dans le footer ils pointent encore vers « # ». Les
+   remplacer par les vraies URL et les ajouter en « sameAs » dans le JSON-LD.
+
+Vérification : taper « site:zitafannie.github.io » dans Google. Si la page
+apparaît, elle est indexée. Ensuite « Zita Fannie Andrianarivony » devrait la
+faire ressortir (nom peu concurrentiel = bon positionnement).
+
+
+-------------------------------------------------------------------------------
+9. LANCER LE SITE EN LOCAL
+-------------------------------------------------------------------------------
+C'est un site statique (aucun build). Ouvrir un terminal :
+
+   cd /home/judi/dev/zitafannie.github.io
+   python3 -m http.server 8000
+
+Puis ouvrir dans le navigateur :  http://localhost:8000
+
+Alternatives équivalentes :
+   npx serve            (Node)
+   php -S localhost:8000
+   Extension « Live Server » de VS Code (rechargement automatique)
+
+
+-------------------------------------------------------------------------------
+10. METTRE EN LIGNE (DÉPLOIEMENT)
+-------------------------------------------------------------------------------
+GitHub Pages déploie automatiquement à chaque push sur la branche « main » :
+
+   cd /home/judi/dev/zitafannie.github.io
+   git add -A
+   git commit -m "…"
+   git push origin main
+
+Le site se met à jour sur https://zitafannie.github.io en 1 à 2 minutes.
+
+
+-------------------------------------------------------------------------------
+11. HISTORIQUE DES COMMITS DE LA REFONTE
+-------------------------------------------------------------------------------
+- Refonte éditoriale du portfolio + optimisations
+- SEO : indexation Google (sitemap, robots, données structurées)
+(+ le présent document)
+
+===============================================================================
+  Fin du document.
+===============================================================================
